@@ -1,0 +1,6 @@
+{
+    "editor.renderWhitespace": "all",
+    "[scss]": {
+        "editor.tabSize": 2
+    }
+}
