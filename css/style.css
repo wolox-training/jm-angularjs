@@ -1,0 +1,253 @@
+h1 {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+#header {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+h1#header {
+    color: #aba4ac;
+    margin-bottom: 10px;
+}
+
+.intro {
+    color: #dddadd;
+    margin-bottom: 5px;
+    width: 900px;
+}
+
+/* .float img {
+    float: left;
+} */
+
+.ski {
+    float: right;
+}
+
+.sled {
+    float: left;
+}
+
+.clearing-floats img {
+    float: left;
+}
+
+.clearing-floats .intro {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* IE&7 */
+}
+
+.featured {
+    /* color: #aba4ac; */
+    color: #0000ff;
+}
+
+.featured p {
+    color: #000;
+}
+
+/* p { color: #fff; }  0,0,0,1 */
+/* .into { color: #98c7d4; } 0,0,1,0 */
+/* #header { color: #444245; } 0,1,0,0 */
+/* <h1 style="color: 000">Mogul<h1> */
+/* p { color: #fff !important; } !!!  */
+
+#content p {
+    color: #000;
+}
+
+#content .featured {
+    color: #777;
+}
+
+/* .downhill {
+    border: 1px solid #fff; 340px box width (desing)
+    padding-left: 14px;     28px padding width
+    padding-right: 14px;    -2px border width
+    width: ?;               = 310px
+} */
+
+/* overflow: visible / auto / hidden / scroll */
+
+/* position: static / relative / absolute / fixed */
+
+sup {
+    font-size: 75%;
+    line-height: 0;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.5em;
+}
+
+article {
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.ski {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
+
+.sled {
+    z-index: 1;
+}
+
+/* font: 16px18px bold italic sans-serif;
+
+background: #000 url(image.jpg) no-repeat center top;
+
+list-style: disc inside none;
+
+margin or paddding: 0 10px 0 10px / 0 10px 0 /0 10px;
+
+border: 3px solid #ccc; */
+
+/* display: none / block / inline / inline-block; */
+
+.sale {
+    display: block;
+    padding: 0 10px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* margin: 0 auto;
+tex-align: center; */
+
+.crop {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.crop img {
+    height: 300px;
+    width: UTO;
+}
+
+.logo {
+    background: url(images/sled.jpeg);
+    display: block;
+    height: 100px;
+    width: 200px;
+    text-indent: -9999px;
+}
+
+.logo:hover, .logo:focus {
+    background-position: 0 0;
+}
+
+.l, .r {
+    background: url(images/buttons.jpeg);
+    display: block;
+    height: 270px;
+    width: 270px;
+    text-indent: -9999px;
+}
+
+.r {
+    background-position: -260px 0;
+}
+
+li {
+    border-bottom: 1px solid #aaa;
+}
+
+li:last-child {
+    border-bottom: 0;
+}
+
+li:nth-child(even) {
+    background-color: #444245;
+}
+
+/* li:nth-child(2n) {} Even */
+
+/* li:nth-child(2n+1) {} Odd */
+
+/* :hover / :focus / :active / :visited */
+
+/* :first-child / :last-child / :only-child */
+
+/* :nth-child() / :nth-of-type( */
+
+article p:last-child:after {
+    content: '\2744';
+}
+
+/* :before / :after */
+
+/* :first-letter / :first-line */
+
+blockquote:before {
+    content: '';
+    background: url(images/quote.png);
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+/* Different specificity or selectors */
+
+rect { stroke: red; }
+.myClass { stroke: red; }
+#myID { stroke: red; }
+
+.child {
+    color: blue;
+}
+
+div {
+    border: 1px solid blue;
+    height: 200px;
+    width: 200px;
+  }
+  
+/* Presentational Styles */
+/* body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh; */
+}
+
+/* body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh; */
+}
+
+div {
+    height: 100px;
+    width: 100px;
+}
