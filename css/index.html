@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CSS</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <style>
+            h1 { color: #98c7d4; }
+        </style> -->
+    </head>
+    <body>
+        
+        <h1 style="color: #98c7d4">
+            CSS Cross Country
+        </h1>
+
+        <h1 class="intro" id="header">
+            Nice and Toasty
+        </h1>
+
+        <!-- <article class="float">
+            <img src="images/ski.jpeg" alt="Ski!" height="100">
+            <p>To successfully ski, simply do not fall.</p>
+        </article>
+
+        <article>
+            <img class="ski" src="images/ski.jpeg" alt="Ski!" height="200">
+            <img class="ski" src="images/sled.jpeg" alt="Sled!" height="200">
+        </article> -->
+
+        <!-- <div class="clearing-floats">
+            <div>
+                <img src="images/ski.jpeg" alt="Ski!" height="200">
+                <p>To successfully ski, simply do not fall.</p>
+            </div>
+    
+            <div class="intro">
+                <p>Whee!</p>
+            </div>
+        </div> -->
+
+        <!-- <div class="clearing-floats">
+            <img src="images/ski.jpeg" alt="Ski!" height="200">
+            <p>To successfully ski, simply do not fall.</p>
+            <div class="clear"></div>
+        </div> -->
+
+        <!-- <div class="group">
+            <img src="images/ski.jpeg" alt="Skiing!" height="200" />
+            <p>To successfully ski, simply do not fall.</p>
+        </div> -->
+
+        <!-- <article class="featured">
+            <p>Dang, it's cold up here!</p>
+        </article> -->
+
+        <!-- <section id="content">
+            <p class="featured">Free coffee with ski rental</p>
+            <p>Choose from 48 different ski colors.</p>
+        </section> -->
+
+        <!-- <article>
+            <h2>Sven's SnowshoeX<sup>2</sup></h2>
+        </article> -->
+
+        <!-- <article>
+            <h2>New Snowshoes</h2>
+            <h3>By: Sven</h3>
+            <p>This season's hot styles, available now!</p>
+        </article> -->
+
+        <!-- <article>
+            <img src="images/ski.jpeg" alt="Ski!" height="200">
+            <img src="images/sled.jpeg" alt="Sled!" height="200">
+        </article> -->
+
+        <!-- <div class="container"> 
+            <h1>Sven's Snowshoe Superstore</h1>
+            <p>Our snowshoes are so stylish!</p>
+            <a href="/sale" class="sale">View our sales</a>
+        </div> -->
+
+        <!-- <h4>Write it as an inline image instead:</h4>
+        <ul class="rental">
+            <li class="crop">
+                <img src="images/ski.jpeg" alt="Ski!">
+            </li>
+            <li class="crop">
+                <img src="images/sled.jpeg" alt="Sled!">
+            </li>
+        </ul> -->
+
+        <!-- <a href="#" class="logo">Sven's Showshoe Emporium</a> -->
+
+        <!-- <ul class="group">
+            <li>
+                <a href="#" class="l">L</a>
+                <a href="#" class="r">R</a>
+            </li>
+        </ul> -->
+
+        <!-- <ul>
+            <li>
+                <a href="#lodging">Lodging</a>
+            </li>
+            <li>
+                <a href="#rentals">Rentals</a>
+            </li>
+            <li>
+                <a href="#lessons">Lessons</a>
+            </li>
+        </ul> -->
+
+        <!-- <article>
+            <p>Coffee? Hah! Our cocoa is far better</p>
+            <p>Visit from 4-5 for cocoa happy hour!</p>
+        </article> -->
+
+        <!-- <blockquote>
+            Coffee? Hah! cocoa is far better.
+        </blockquote> -->
+
+        <div style="background:orange; height:100px; width:100px;">
+            Ack, inline!
+        </div>
+
+        <svg id="icon-logo-star" viewBox="0 0 362.62 388.52" width="100px" height="100px">
+            <style>
+              .logo {
+                fill: #ff9800;
+              }
+            </style>
+            <title>CSS Tricks Logo</title>
+            <path class="logo" d="M156.58 239l-88.3 64.75c-10.59 7.06-18.84 11.77-29.43 11.77-21.19 0-38.85-18.84-38.85-40 0-17.69 14.13-30.64 27.08-36.52l103.6-44.74-103.6-45.92C13 142.46 0 129.51 0 111.85 0 90.66 18.84 73 40 73c10.6 0 17.66 3.53 28.25 11.77l88.3 64.75-11.74-104.78C141.28 20 157.76 0 181.31 0s40 18.84 36.5 43.56L206 149.52l88.3-64.75C304.93 76.53 313.17 73 323.77 73a39.2 39.2 0 0 1 38.85 38.85c0 18.84-12.95 30.61-27.08 36.5l-103.61 45.91L335.54 239c14.13 5.88 27.08 18.83 27.08 37.67 0 21.19-18.84 38.85-40 38.85-9.42 0-17.66-4.71-28.26-11.77L206 239l11.77 104.78c3.53 24.72-12.95 44.74-36.5 44.74s-40-18.84-36.5-43.56z"></path>
+        </svg>
+
+        <!-- Inheritance -->
+        <g style="stroke: red">
+            <rect x="1" y="1" width="10" height="10" /> <!-- inherits stroke: red -->
+        </g>
+        
+        <!-- Inline attributes -->
+        <rect x="1" y="1" width="10" height="10" stroke="red" />
+        
+        <!-- External style sheet -->
+        <link rel="stylesheet" href="/path/to/stylesheet.css">
+        
+        <!-- Embedded styles -->
+        <style>
+            rect { stroke: red; }
+        </style>
+        
+        <!-- Inline style -->
+        <g style="stroke: red"></g>
+        
+        <!-- Important keyword -->
+        <g style="stroke: red !important"></g>
+
+        <div class="parent" style="color: red !important;">
+            <div class="child">I'm the child and my text is blue, even though my parent tells me that red is important.</div>
+        </div>
+
+        <style>
+            div { 
+              border: 1px solid red;
+              height: 100px;
+              width: 100px;
+            }
+        </style>
+        
+        <div></div>
+
+        <div id="my-id" class="my-class"></div>
+
+        <div style="border: 1px solid red; border: 1px solid blue;"></div> 
+
+        <!-- <style>
+            div {
+                border: 1px solid red;
+                border: 1px solid blue; /* This will be applied because it is at the bottom */
+            }
+        </style> -->
+
+        <div style="1px solid red;"></div>
+
+        <!-- <style>
+            div {
+                /* This beats inline styling */
+                border: 1px solid orange !important;
+                /* These do not */
+                height: 200px;
+                width: 200px;
+            }
+        </style> -->
+        
+        <div style="border: 1px solid red; height: 100px; width: 100px;"></div>
+
+        <style>
+            /* Classes have higher priority than tags */
+            .my-class {
+              border: 1px solid blue;
+              height: 100px;
+              width: 100px;
+            }
+            
+            div { 
+              border: 1px solid red;
+              height: 200px;
+              width: 200px;
+            }
+        </style>
+        
+        <div class="my-class"></div>
+
+        <style>
+            /* The important keyword ignores the cascade */
+            .my-class { border: 1px solid red !important; }
+            
+            .my-class { border: 1px solid blue; }
+        </style>
+        
+        <div class="my-class"></div>
+
+        <style>
+            div { border: 1px solid red !important; } /* This wins, despite the ordering */
+            div { border: 1px solid blue; }
+        </style>
+        
+        <div></div>
+
+    </body>
+</html>
