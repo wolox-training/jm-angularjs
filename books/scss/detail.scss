@@ -1,0 +1,31 @@
+.book-box {
+  .book-box-info {
+    .book-box-title {
+      h2 {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: 38px;
+      }
+
+      span {
+        color: $light-gray;
+        font-size: 1.5em;
+        line-height: 28px;
+      }
+    }
+
+    .info {
+      p {
+        color: $light-gray;
+        font-size: 1.25em;
+        line-height: 24px;
+
+        &.bold {
+          color: $black;
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+}
