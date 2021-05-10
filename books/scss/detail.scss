@@ -14,15 +14,21 @@
       }
     }
 
-    .info {
-      p {
-        color: $light-gray;
-        font-size: 1.25em;
-        line-height: 24px;
+    .details {
+      margin-top: 3rem;
 
-        &.bold {
-          color: $black;
-          font-weight: bold;
+      .detail {
+        margin-bottom: 2rem;
+
+        p {
+          color: $light-gray;
+          font-size: 1.25em;
+          line-height: 24px;
+  
+          &.bold {
+            color: $black;
+            font-weight: bold;
+          }
         }
       }
     }
