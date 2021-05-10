@@ -1,5 +1,14 @@
 .book-box {
+  display: flex;
+
+  .book-box-cover {
+    height: 368px;
+    width: 261px;
+  }
+
   .book-box-info {
+    margin-left: 3rem;
+
     .book-box-title {
       h2 {
         font-size: 2em;
