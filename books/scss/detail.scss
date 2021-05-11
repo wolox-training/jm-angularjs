@@ -12,9 +12,22 @@
     padding: 1.5rem;
     width: 56rem;
 
-    .book-box-cover {
-      height: 368px;
-      width: 261px;
+    .book-box-images {
+      position: relative;
+
+      .book-box-cover {
+        height: 368px;
+        width: 261px;
+      } 
+  
+      .book-box-badge {
+        @include transform(rotate(12deg));
+        height: 7.4rem;
+        position: absolute;
+        right: -1.4rem;
+        top: -1rem;
+        width: auto;
+      }
     }
 
     .book-box-info {
