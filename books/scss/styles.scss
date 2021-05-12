@@ -11,8 +11,8 @@ body {
 }
 
 .title-2 {
+  @extend .bold;
   font-size: 32px;
-  font-weight: bold;
   line-height: 30px;
 }
 
