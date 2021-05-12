@@ -1,75 +1,41 @@
-.book-detail {
-  background-color: $wild-sand;
+.book-box {
+  @include shadow(4px 4px 15px 2px $black-shadow);
+  align-self: center;
+  background-color: $white;
   display: flex;
-  height: 100vh;
-  justify-content: center;
+  padding: 1.5rem;
+  width: 56rem;
 
-  .book-box {
-    @include shadow(4px 4px 15px 2px $black-shadow);
-    align-self: center;
-    background-color: $white;
-    display: flex;
-    padding: 1.5rem;
-    width: 56rem;
+  .book-box-images {
+    position: relative;
 
-    .book-box-images {
-      position: relative;
+    .book-box-cover {
+      height: 368px;
+      width: 261px;
+    } 
 
-      .book-box-cover {
-        height: 368px;
-        width: 261px;
-      } 
-  
-      .book-box-badge {
-        @include transform(rotate(12deg));
-        height: 7.4rem;
-        position: absolute;
-        right: -1.4rem;
-        top: -1rem;
-        width: auto;
-      }
+    .book-box-badge {
+      @include transform(rotate(12deg));
+      height: 7.4rem;
+      position: absolute;
+      right: -1.4rem;
+      top: -1rem;
+      width: auto;
+    }
+  }
+
+  .book-box-info {
+    margin-left: 3rem;
+    width: 100%;
+    
+    .book-box-title {
+      border-bottom: 4px solid $earls-green;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
     }
 
-    .book-box-info {
-      margin-left: 3rem;
-      width: 100%;
-      
-      .book-box-title {
-        border-bottom: 4px solid $earls-green;
-        padding-bottom: 1rem;
-
-        h2 {
-          font-size: 2em;
-          font-weight: bold;
-          line-height: 38px;
-        }
-
-        span {
-          color: $light-gray;
-          font-size: 1.5em;
-          line-height: 28px;
-        }
-      }
-
-      .details {
-        margin-top: 2.5rem;
-
-        .detail {
-          margin-bottom: 2rem;
-
-          p {
-            color: $light-gray;
-            font-size: 1.25em;
-            line-height: 24px;
-    
-            &.bold {
-              color: $black;
-              font-weight: bold;
-            }
-          }
-        }
-      }
-
+    .detail {
+      margin-bottom: 2rem;
     }
   }
 }
