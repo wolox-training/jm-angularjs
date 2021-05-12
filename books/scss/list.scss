@@ -1,0 +1,35 @@
+.book-list {
+  align-items: center;
+  background-color: $wild-sand;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  .book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 888px;
+    width: 100%;
+
+    .book {
+      @include shadow(4px 4px 15px 2px $black-shadow);
+      align-self: flex-start;
+      flex: 0 1 20%;
+      margin: 20px;
+      padding: 20px;
+
+      .cover {
+        height: 200px;
+        width: 142px;
+      }
+
+      .book-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+      }
+    }
+  }
+}
