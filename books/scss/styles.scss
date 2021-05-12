@@ -1,3 +1,27 @@
 body {
   font-family: $roboto;
 }
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: $light-gray;
+}
+
+.title-2 {
+  @extend .bold;
+  font-size: 32px;
+  line-height: 30px;
+}
+
+.subhead-2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-1 {
+  font-size: 20px;
+  line-height: 24px;
+}

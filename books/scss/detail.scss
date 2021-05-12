@@ -10,37 +10,11 @@
     margin-left: 3rem;
 
     .book-box-title {
-      h2 {
-        font-size: 2em;
-        font-weight: bold;
-        line-height: 38px;
-      }
-
-      span {
-        color: $light-gray;
-        font-size: 1.5em;
-        line-height: 28px;
-      }
+      margin-bottom: 3rem;
     }
 
-    .details {
-      margin-top: 3rem;
-
-      .detail {
-        margin-bottom: 2rem;
-
-        p {
-          color: $light-gray;
-          font-size: 1.25em;
-          line-height: 24px;
-  
-          &.bold {
-            color: $black;
-            font-weight: bold;
-          }
-        }
-      }
+    .detail {
+      margin-bottom: 2rem;
     }
-
   }
 }
