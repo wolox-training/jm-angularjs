@@ -1,16 +1,55 @@
-.book-box {
-  display: flex;
+.back-list {
+  margin-top: 8vh;
+  max-width: 900px;
+  padding: 0 30px;
+  position: absolute;
+  width: 100%;
 
-  .book-box-cover {
-    height: 368px;
-    width: 261px;
+  .link-2 {
+    &::before {
+      content: url(images/back-arrow.png);
+      left: 0;
+      margin-right: 10px;
+      position: absolute;
+      top: 2px;
+    }
+  }
+}
+
+.book-box {
+  @include shadow(4px 4px 15px 2px $black-shadow);
+  align-self: center;
+  background-color: $white;
+  display: flex;
+  padding: 1.5rem;
+  width: 56rem;
+
+  .book-box-images {
+    position: relative;
+
+    .book-box-cover {
+      height: 368px;
+      width: 261px;
+    } 
+
+    .book-box-badge {
+      @include transform(rotate(12deg));
+      height: 7.4rem;
+      position: absolute;
+      right: -1.4rem;
+      top: -1rem;
+      width: auto;
+    }
   }
 
   .book-box-info {
     margin-left: 3rem;
-
+    width: 100%;
+    
     .book-box-title {
-      margin-bottom: 3rem;
+      border-bottom: 4px solid $earls-green;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
     }
 
     .detail {

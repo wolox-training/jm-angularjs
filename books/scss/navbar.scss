@@ -1,0 +1,31 @@
+.book-navbar {
+  @include shadow(0px 4px 15px 2px $black-shadow);
+  background-color: $white;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+
+  .book-navbar-line {
+    background-color: $cerulean;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .book-navbar-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 888px;
+    padding: 30px;
+    width: 100%;
+
+    .logo {
+      height: auto;
+      width: 180px;
+    }
+  }
+}
