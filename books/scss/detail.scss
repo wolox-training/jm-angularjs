@@ -5,12 +5,14 @@
   position: absolute;
   width: 100%;
 
-  &::before {
-    content: url(images/back-arrow.png);
-    left: 0;
-    margin-right: 10px;
-    position: absolute;
-    top: 2px;
+  .link-2 {
+    &::before {
+      content: url(images/back-arrow.png);
+      left: 0;
+      margin-right: 10px;
+      position: absolute;
+      top: 2px;
+    }
   }
 }
 
