@@ -1,0 +1,20 @@
+.book-box {
+  display: flex;
+
+  .book-box-cover {
+    height: 368px;
+    width: 261px;
+  }
+
+  .book-box-info {
+    margin-left: 3rem;
+
+    .book-box-title {
+      margin-bottom: 3rem;
+    }
+
+    .detail {
+      margin-bottom: 2rem;
+    }
+  }
+}
