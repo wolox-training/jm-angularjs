@@ -1,5 +1,9 @@
 body {
+  background-color: $wild-sand;
+  display: flex;
   font-family: $roboto;
+  min-height: 100vh;
+  justify-content: center;
 }
 
 .bold {

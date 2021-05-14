@@ -1,5 +1,10 @@
 .book-box {
+  @include shadow(4px 4px 15px 2px $black-shadow);
+  align-self: center;
+  background-color: $white;
   display: flex;
+  padding: 1.5rem;
+  width: 56rem;
 
   .book-box-cover {
     height: 368px;
@@ -8,13 +13,17 @@
 
   .book-box-info {
     margin-left: 3rem;
-
+    width: 100%;
+    
     .book-box-title {
-      margin-bottom: 3rem;
+      border-bottom: 4px solid $earls-green;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
     }
 
     .detail {
       margin-bottom: 2rem;
     }
+
   }
 }

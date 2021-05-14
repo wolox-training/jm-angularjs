@@ -24,3 +24,13 @@ Run the following command:
 Related links:
 
 - [Extends vs mixins](https://medium.com/stories-from-the-keen/when-to-use-extends-vs-mixins-in-sass-b09d55abd53)
+
+# Tools
+
+- Get color name:
+
+    https://chir.ag/projects/name-that-color/#828282
+
+- Pixel to em converter:
+
+    https://www.w3schools.com/tags/ref_pxtoemconversion.asp
