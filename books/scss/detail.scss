@@ -1,3 +1,10 @@
+.detail-container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
 .back-list {
   margin-top: 8vh;
   max-width: 900px;
@@ -33,7 +40,7 @@
     } 
 
     .book-box-badge {
-      height: 7.4rem;
+      height: $badge-height;
       position: absolute;
       right: -1.4rem;
       top: -1rem;
@@ -58,6 +65,57 @@
 
     .detail {
       margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .detail-container {
+    align-items: center;
+    flex-direction: column-reverse;
+    min-height: 660px;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+
+  .back-list {
+    margin: 0;
+    position: relative;
+    width: auto;
+  }
+
+  .book-box {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 570px;
+    padding: 2.4rem 1.2rem 2rem;
+    width: 336px;
+
+    .book-box-images {
+      .book-box-cover {
+        height: 299px;
+        width: 212px;
+      }
+
+      .book-box-badge {
+        height: calc(#{$badge-height} * 0.7);
+        transform: rotate(20deg);
+        right: -12px;
+      }
+    }
+
+    .book-box-info {
+      margin-left: 0;
+      margin-top: 10px;
+
+      .book-box-title {
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .detail {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
