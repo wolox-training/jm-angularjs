@@ -3,15 +3,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 888px;
+  max-width: 890px;
   width: 100%;
 
   .book {
     @include shadow(4px 4px 15px 2px $black-shadow);
     align-self: flex-start;
-    flex: 0 1 20%;
     margin: 20px;
     padding: 20px;
+    max-width: 182px;
+    width: 100%;
 
     .cover {
       height: 200px;
