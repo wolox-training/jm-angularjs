@@ -73,9 +73,9 @@
   .detail-container {
     align-items: center;
     flex-direction: column-reverse;
-    min-height: 660px;
     justify-content: space-evenly;
     margin: 10px;
+    min-height: 660px;
   }
 
   .back-list {
@@ -99,8 +99,8 @@
 
       .book-box-badge {
         height: calc(#{$badge-height} * 0.7);
-        transform: rotate(20deg);
         right: -12px;
+        transform: rotate(20deg);
       }
     }
 
