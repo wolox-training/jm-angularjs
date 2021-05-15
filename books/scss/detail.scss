@@ -1,11 +1,11 @@
 .back-list {
-  margin-top: 8vh;
+  margin-top: 100px;
   max-width: 900px;
   padding: 0 30px;
   position: absolute;
   width: 100%;
 
-  .link-2 {
+  .primary-link {
     &::before {
       content: url(images/back-arrow.png);
       left: 0;
