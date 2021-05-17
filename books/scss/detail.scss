@@ -1,3 +1,21 @@
+.back-list {
+  margin-top: 100px;
+  max-width: 900px;
+  padding: 0 30px;
+  position: absolute;
+  width: 100%;
+
+  .primary-link {
+    &::before {
+      content: url(images/back-arrow.png);
+      left: 0;
+      margin-right: 10px;
+      position: absolute;
+      top: 2px;
+    }
+  }
+}
+
 .book-box {
   @include shadow(4px 4px 15px 2px $black-shadow);
   align-self: center;
