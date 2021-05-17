@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 890px;
+  max-width: $container-width;
   width: 100%;
 
   .book {
