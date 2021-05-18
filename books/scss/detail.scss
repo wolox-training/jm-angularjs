@@ -44,6 +44,7 @@
     } 
 
     .book-box-badge {
+      animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
       height: $badge-height;
       position: absolute;
       left: 205px;
@@ -162,5 +163,14 @@
   .back-list {
     grid-area: return-bottom;
     text-align: center;
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100px) rotate(12deg);
+  }
+  100% {
+    transform: translateY(0) rotate(12deg);
   }
 }
