@@ -6,13 +6,13 @@
 }
 
 .back-list {
-  margin-top: 8vh;
+  margin-top: 100px;
   max-width: 900px;
   padding: 0 30px;
   position: absolute;
   width: 100%;
 
-  .link-2 {
+  .primary-link {
     &::before {
       content: url(images/back-arrow.png);
       left: 0;
@@ -42,13 +42,9 @@
     .book-box-badge {
       height: $badge-height;
       position: absolute;
-      right: -1.4rem;
-      top: -1rem;
+      left: 205px;
+      bottom: 270px;
       transform: rotate(12deg);
-      -webkit-transform: rotate(12deg);
-      -moz-transform: rotate(12deg);
-      -ms-transform: rotate(12deg);
-      -o-transform: rotate(12deg);
       width: auto;
     }
   }
@@ -99,7 +95,8 @@
 
       .book-box-badge {
         height: calc(#{$badge-height} * 0.7);
-        right: -12px;
+        left: 165px;
+        bottom: 235px;
         transform: rotate(20deg);
       }
     }

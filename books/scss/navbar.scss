@@ -1,26 +1,19 @@
-.book-navbar {
+.navbar {
   @include shadow(0px 4px 15px 2px $black-shadow);
   background-color: $white;
+  border-top: 6px solid $cerulean;
   display: flex;
-  height: 70px;
+  height: 64px;
   justify-content: center;
   position: fixed;
   width: 100%;
 
-  .book-navbar-line {
-    background-color: $cerulean;
-    height: 6px;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
-
-  .book-navbar-container {
+  .nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 888px;
-    padding: 30px;
+    max-width: $container-width;
+    padding: 0px 30px 6px;
     width: 100%;
 
     .logo {
