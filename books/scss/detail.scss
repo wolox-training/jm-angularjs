@@ -95,7 +95,8 @@
 
       .book-box-badge {
         height: calc(#{$badge-height} * 0.7);
-        right: -12px;
+        left: 165px;
+        bottom: 235px;
         transform: rotate(20deg);
       }
     }
