@@ -1,1 +1,123 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
+body {
+  background-color: $wild-sand;
+  font-family: $roboto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: $light-gray;
+}
+
+.title-2 {
+  @extend .bold;
+  font-size: 32px;
+  line-height: 30px;
+}
+
+.title-6 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.subhead-2 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.sub-head-3 {
+  color: $light-gray;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.text-1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.nav-link {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.primary-link {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.form-field {
+  margin: 10px 0;
+}
+
+.label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.input {
+  border-radius: 5px;
+  height: 32px;
+  width: 252px;
+  margin: 10px 0;
+}
+
+.button {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  font-size: 16px;
+  height: 32px;
+  justify-content: center;
+  line-height: 24px;
+  width: 252px;
+
+  &.primary {
+    background-color: $earls-green;
+    color: $white;
+  }
+
+  &.secondary {
+    border: 1px solid $earls-green;
+    color: $earls-green;
+  }
+}
+
+@media only screen and (max-width: $tablet-width) {
+  .text-1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .title-2 {
+    font-size: 24px;
+    line-height: 38px;
+  }
+
+  .subhead-2 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .text-1 {
+    font-size: 14px;
+  }
+
+  .primary-link {
+    font-size: 18px;
+  }
+}

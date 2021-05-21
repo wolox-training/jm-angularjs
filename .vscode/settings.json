@@ -2,5 +2,11 @@
     "editor.renderWhitespace": "all",
     "[scss]": {
         "editor.tabSize": 2
+    },
+    "[js]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
     }
 }
