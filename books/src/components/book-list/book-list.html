@@ -1,7 +1,7 @@
 <div class="container">
   <div class="search-box">
-      <input class="input" type="text" id="search" name="search" ng-model="$ctrl.search" placeholder="{{ 'BOOKLIST.SEARCH' | translate }}">
-      <div class="icon"></div>
+    <input class="input" type="text" id="search" name="search" ng-model="$ctrl.search" placeholder="{{ 'BOOKLIST.SEARCH' | translate }}">
+    <div class="icon"></div>
   </div>
   <div class="book-list">
     <div ng-repeat="book in $ctrl.books | filter:$ctrl.filterBooks" class="book">
@@ -15,4 +15,3 @@
     </div>
   </div>
 </div>
-
