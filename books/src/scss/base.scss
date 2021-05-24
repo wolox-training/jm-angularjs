@@ -77,6 +77,15 @@ body {
   margin: 10px 0;
 }
 
+.has-error {
+  border: 2px solid $red;
+}
+
+.span-error {
+  font-size: 12px;
+  color: $red;
+}
+
 .button {
   align-items: center;
   border-radius: 5px;
