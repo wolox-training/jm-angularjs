@@ -7,9 +7,19 @@ angular.module('app-bootstrap').component('appInput', {
     model: '<',
     name: '@',
     label: '@',
-    type: '@'
+    type: '@',
+    min: '@',
+    max: '@',
+    compare: '<',
+    pattern: '<',
+    patternText: '@',
+    onUpdate: '&'
   },
   controller: [function () {
+
+    this.update = function(value) {
+      this.onUpdate({ value: value });
+    };
 
   }]
 });
