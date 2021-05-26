@@ -4,7 +4,7 @@ angular.module('app-bootstrap').component('appInput', {
   template: require('./app-input.html'),
   bindings: {
     form: '<',
-    model: '<',
+    model: '=',
     name: '@',
     label: '@',
     type: '@',
