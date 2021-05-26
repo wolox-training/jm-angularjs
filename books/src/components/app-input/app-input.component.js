@@ -4,7 +4,7 @@ angular.module('app-bootstrap').component('appInput', {
   template: require('./app-input.html'),
   bindings: {
     form: '<',
-    model: '<',
+    model: '=',
     name: '@',
     label: '@',
     type: '@',
@@ -16,10 +16,6 @@ angular.module('app-bootstrap').component('appInput', {
     onUpdate: '&'
   },
   controller: [function () {
-
-    this.update = function(value) {
-      this.onUpdate({ value: value });
-    };
 
   }]
 });
