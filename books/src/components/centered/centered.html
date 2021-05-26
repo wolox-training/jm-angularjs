@@ -1,0 +1,19 @@
+<div>
+  <div class="page">
+    <img class="logo" ng-src='{{$ctrl.logo}}' alt="logo" />
+    <h1 class="title">{{ $ctrl.title }}</h1>
+  </div>
+  <div class="example">
+    <span>
+      This is {{ $ctrl.name }}. You can go to
+      <a class="link" ui-sref='component1'>component 1</a>
+      or
+      <a class="link" ui-sref='component2'>component 2</a>
+      using
+      <a href='https://ui-router.github.io/ng1/' target='_blank'>ui-router</a>
+    </span>
+  </div>
+  <div class="example">
+    <wc-hello-world></wc-hello-world>
+  </div>
+</div>
