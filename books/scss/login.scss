@@ -1,0 +1,39 @@
+.login-container {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.login-box {
+  align-items: center;
+  background-color: $wild-sand;
+  border-top: 8px solid $cerulean;
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  justify-content: center;
+  padding: 22px 30px 30px;
+  width: 300px;
+
+  .login-logo {
+    height: auto;
+    width: 212px;
+  }
+
+  .primary {
+    position: relative;
+    margin-bottom: 30px;
+
+    &::after {
+      border-bottom: 2px solid $silver-chalice;
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 45px;
+      width: 100%;
+    }
+  }
+}
