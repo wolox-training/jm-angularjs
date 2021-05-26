@@ -17,9 +17,5 @@ angular.module('app-bootstrap').component('appInput', {
   },
   controller: [function () {
 
-    this.update = function(value) {
-      this.onUpdate({ value: value });
-    };
-
   }]
 });

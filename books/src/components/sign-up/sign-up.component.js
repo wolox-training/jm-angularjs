@@ -19,8 +19,5 @@ angular.module('app-bootstrap').component('signUp', {
       }
     };
 
-    this.updateMyInput = function(value) {
-      this.password = value;
-    };
   }]
 });
