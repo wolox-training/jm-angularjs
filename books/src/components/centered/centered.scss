@@ -1,0 +1,31 @@
+.page {
+  align-items: center;
+  background-color: $wolox-blue;
+  background-image: url('./../assets/wolox_bg.png');
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.logo {
+  max-width: 350px;
+  margin-bottom: 50px;
+}
+
+.title {
+  color: $white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+}
+
+.example {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.link {
+  color: $wolox-blue;
+  padding: 0 5px;
+}

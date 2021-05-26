@@ -1,0 +1,11 @@
+<div class="container login-container">
+  <div class="login-box">
+    <img class="login-logo" src="../../assets/LogoWolox.png" alt="Logo">
+    <form name="loginForm" ng-submit="$ctrl.login(loginForm)" novalidate>
+      <app-input form="loginForm" model="$ctrl.email" type="email" name="email" label="Email"></app-input>
+      <app-input form="loginForm" model="$ctrl.password" type="password" name="password" label="Password"></app-input>
+      <button class="button primary" type="submit">Login</button>
+      <a class="button secondary" ui-sref="signUp">Sign Up</a>
+    </form>
+  </div>
+</div>

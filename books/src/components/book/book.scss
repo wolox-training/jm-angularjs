@@ -12,7 +12,7 @@
 
   .primary-link {
     &::before {
-      content: url(images/back-arrow.png);
+      content: url('../assets/back-arrow.png');
       margin-right: 10px;
       position: relative;
       top: 3px;
@@ -76,10 +76,6 @@
 }
 
 @media only screen and (max-width: $tablet-width) {
-  .detail-container {
-    margin: 0 20px;
-  }
-
   .book-box {
     align-items: center;
     gap: 10px 40px;
@@ -163,14 +159,5 @@
   .back-list {
     grid-area: return-bottom;
     text-align: center;
-  }
-}
-
-@keyframes slide-top {
-  0% {
-    transform: translateY(100px) rotate(12deg);
-  }
-  100% {
-    transform: translateY(0) rotate(12deg);
   }
 }
