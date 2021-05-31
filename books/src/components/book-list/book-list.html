@@ -1,10 +1,10 @@
 <div class="container list-container">
   <div class="search-box">
-    <input class="input" type="text" id="search" name="search" ng-model="$ctrl.search" placeholder="{{ 'BOOKLIST.SEARCH' | translate }}">
+    <input class="input" type="text" id="search" name="search" ng-model="$ctrl.search" ng-change="$ctrl.filterBooks()" placeholder="{{ 'BOOKLIST.SEARCH' | translate }}">
     <div class="icon"></div>
   </div>
   <div class="book-list">
-    <div ng-repeat="book in $ctrl.books | filter:$ctrl.filterBooks" class="book">
+    <div ng-repeat="book in $ctrl.filteredBooks" class="book">
       <img class="cover" ng-src="{{ book.image_url || '../../assets/book-cover.png' }}" alt="{{ 'BOOKLIST.COVER' | translate }}">
       <div class="book-info">
         <h6 class="title-6">{{ book.title }}</h6>
