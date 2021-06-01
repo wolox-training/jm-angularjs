@@ -1,0 +1,27 @@
+<div class="container detail-container">
+  <div class="back-list">
+    <a ui-sref="bookList" class="primary-link">{{ 'BOOK.RETURN' | translate }}</a>
+  </div>
+  <div class="book-box">
+    <div class="book-box-images">
+      <img class="book-box-cover" ng-src="{{ $ctrl.book.image_url || '../../assets/book-cover.png' }}" alt="{{ 'BOOK.COVER' | translate }}" alt="Portada">
+      <img class="book-box-badge" src="../../assets/badge.png" alt="{{ 'BOOK.BADGE' | translate }}">
+    </div>
+    <h2 class="title-2">{{ $ctrl.book.title }}</h2>
+    <span class="subhead-2 gray">({{ $ctrl.book.genre }})</span>
+    <div class="book-box-info">
+      <div class="detail">
+        <p class="text-1 bold">{{ 'BOOK.AUTHOR' | translate }}: </p>
+        <p class="text-1 gray">{{ $ctrl.book.author }}</p>
+      </div>
+      <div class="detail">
+        <p class="text-1 bold">{{ 'BOOK.PUBLISHER' | translate }}: </p>
+        <p class="text-1 gray">{{ $ctrl.book.publisher }}</p>
+      </div>
+      <div class="detail">
+        <p class="text-1 bold">{{ 'BOOK.YEAR' | translate }}: </p>
+        <p class="text-1 gray">{{ $ctrl.book.year }}</p>
+      </div>
+    </div>
+  </div>
+</div>
