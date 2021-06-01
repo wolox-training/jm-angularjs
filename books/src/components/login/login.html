@@ -2,10 +2,14 @@
   <div class="login-box">
     <img class="login-logo" src="../../assets/LogoWolox.png" alt="Logo">
     <form name="loginForm" ng-submit="$ctrl.login(loginForm)" novalidate>
-      <app-input form="loginForm" model="$ctrl.email" type="email" name="email" label="Email"></app-input>
-      <app-input form="loginForm" model="$ctrl.password" type="password" name="password" label="Password"></app-input>
-      <button class="button primary" type="submit">Login</button>
+      <app-input form="loginForm" model="$ctrl.user.email" type="email" name="email" label="Email"></app-input>
+      <app-input form="loginForm" model="$ctrl.user.password" type="password" name="password" label="Password"></app-input>
+      <button class="button primary" type="submit" ng-disabled="$ctrl.loading">Login</button>
       <a class="button secondary" ui-sref="signUp">Sign Up</a>
+      <div ng-if="$ctrl.loading" class="loader-container">
+        <div class="loader"></div>
+      </div>
+      <span ng-if="$ctrl.error" class="error-message">{{ $ctrl.error }}</span>
     </form>
   </div>
 </div>

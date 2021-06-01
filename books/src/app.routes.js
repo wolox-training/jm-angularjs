@@ -17,29 +17,58 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
       }).state('bookList',
       {
         url: '/list',
-        component: 'bookList'
+        component: 'bookList',
+        resolve: {
+          auth: function(authService) {
+            return authService.isAuthenticated();
+          }
+        }
       }).state('book',
       {
         url: '/:id',
-        component: 'book'
+        component: 'book',
+        resolve: {
+          auth: function(authService) {
+            return authService.isAuthenticated();
+          }
+        }
       }).state('login',
       {
         url: '/login',
-        component: 'login'
+        component: 'login',
+        resolve: {
+          auth: function(authService) {
+            return authService.isAnonymous();
+          }
+        }
       }).state('signUp',
       {
         url: '/sign-up',
-        component: 'signUp'
+        component: 'signUp',
+        resolve: {
+          auth: function(authService) {
+            return authService.isAnonymous();
+          }
+        }
       });
     $urlRouterProvider.otherwise('/');
   }
 ]);
 
-angular.module('app-bootstrap').run(['$transitions',
-  function ($transitions) {
+angular.module('app-bootstrap').run(['$transitions', '$state',
+  function ($transitions, $state) {
     $transitions.onBefore({ from: 'home' }, transition => {
       // eslint-disable-next-line no-console
       console.log('Route changed, use ransition.abort(); for abort if you need', transition);
+    });
+
+    // If the route change failed due to authentication error, redirect them out
+    $state.defaultErrorHandler(function(error) {
+      if (error.detail === 'Not Authenticated') {
+        $state.go('login');
+      } else if (error.detail === 'Authenticated') {
+        $state.go('bookList');
+      }
     });
   }
 ]);
