@@ -89,8 +89,18 @@ angular.module('app-bootstrap').component('bookList', {
       }
     ];
 
-    this.filterBooks =
-      (book) => (book.title + book.author).toLowerCase().indexOf(this.search.toLowerCase()) >= 0;
+    this.filterBooks = () => {
+      if (this.search === '') {
+        this.filteredBooks = this.books;
+      } else {
+        const wanted = this.search.toLocaleLowerCase();
+        this.filteredBooks = this.books.filter((book) =>
+          book.title.toLocaleLowerCase().includes(wanted) || book.author.toLocaleLowerCase().includes(wanted)
+        );
+      }
+    };
+
+    this.filterBooks();
 
   }]
 });
