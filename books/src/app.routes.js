@@ -26,6 +26,10 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
       {
         url: '/login',
         component: 'login'
+      }).state('signUp',
+      {
+        url: '/sign-up',
+        component: 'signUp'
       });
     $urlRouterProvider.otherwise('/');
   }

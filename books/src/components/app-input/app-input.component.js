@@ -4,10 +4,16 @@ angular.module('app-bootstrap').component('appInput', {
   template: require('./app-input.html'),
   bindings: {
     form: '<',
-    model: '<',
+    model: '=',
     name: '@',
     label: '@',
-    type: '@'
+    type: '@',
+    min: '@',
+    max: '@',
+    compare: '<',
+    pattern: '<',
+    patternText: '@',
+    onUpdate: '&'
   },
   controller: [function () {
 
