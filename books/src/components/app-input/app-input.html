@@ -1,0 +1,8 @@
+<div class="form-field">
+  <label class="label" for="{{ $ctrl.name }}">{{ $ctrl.label }}</label>
+  <input ng-class="{'has-error': $ctrl.form[$ctrl.name].$touched && $ctrl.form[$ctrl.name].$invalid}" class="input" type="{{ $ctrl.type }}" name="{{ $ctrl.name }}" ng-model="$ctrl.model" required>
+  <div ng-messages="$ctrl.form[$ctrl.name].$touched && $ctrl.form[$ctrl.name].$error">
+    <span class="span-error" ng-message="required">{{ 'INPUT.REQUIRED' | translate }}</span>
+    <span class="span-error" ng-message="email">{{ 'INPUT.EMAIL' | translate }}</span>
+  </div>
+</div>

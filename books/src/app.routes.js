@@ -22,6 +22,10 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
       {
         url: '/:id',
         component: 'book'
+      }).state('login',
+      {
+        url: '/login',
+        component: 'login'
       });
     $urlRouterProvider.otherwise('/');
   }
