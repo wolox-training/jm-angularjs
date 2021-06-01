@@ -10,6 +10,8 @@
 
 @import 'mixin';
 
+@import 'animations';
+
 @import '../components/centered/centered';
 
 @import '../components/component1/component1';
@@ -17,3 +19,5 @@
 @import '../components/component2/component2';
 
 @import '../components/book-list/book-list';
+
+@import '../components/book/book';

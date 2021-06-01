@@ -18,6 +18,10 @@ angular.module('app-bootstrap').config(['$stateProvider', '$urlRouterProvider',
       {
         url: '/list',
         component: 'bookList'
+      }).state('book',
+      {
+        url: '/:id',
+        component: 'book'
       });
     $urlRouterProvider.otherwise('/');
   }
