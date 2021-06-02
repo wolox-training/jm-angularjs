@@ -1,13 +1,13 @@
 <div class="container login-container">
   <div class="login-box">
     <img class="login-logo" src="../../assets/LogoWolox.png" alt="Logo">
-    <form name="signUpForm" ng-submit="$ctrl.signUp(signUpForm)" novalidate>
+    <form id="signUpForm" name="signUpForm" ng-submit="$ctrl.signUp(signUpForm)" novalidate>
       <app-input form="signUpForm" model="$ctrl.name" type="text" name="name" label="{{ 'SIGNUP.NAME' | translate }}"></app-input>
       <app-input form="signUpForm" model="$ctrl.lastname" type="text" name="lastname" label="{{ 'SIGNUP.LASTNAME' | translate }}"></app-input>
       <app-input form="signUpForm" model="$ctrl.email" type="email" name="email" label="Email"></app-input>
       <app-input form="signUpForm" model="$ctrl.password" type="password" name="password" label="Password" min="8" max="52" pattern="$ctrl.confirmPattern" pattern-text="{{ 'SIGNUP.PATTERN' | translate }}" on-update="$ctrl.updateMyInput(value)"></app-input>
       <app-input form="signUpForm" model="$ctrl.confirm" type="password" name="confirm" label="{{ 'SIGNUP.CONFIRM' | translate }}" compare="$ctrl.password"></app-input>
-      <button class="button primary" type="submit">Sign Up</button>
+      <wc-button class="primary" form="signUpForm" label="Sign Up"></wc-button>
       <a class="button secondary" ui-sref="login">Login</a>
     </form>
   </div>

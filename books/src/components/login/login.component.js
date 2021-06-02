@@ -6,7 +6,7 @@ angular.module('app-bootstrap').component('login', {
     function (userService, $state, authService) {
       this.user = {};
       this.error = '';
-      this.loading = false;
+      this.loading = '';
 
       function validateControls(form) {
         for (var control of form.$$controls) {
@@ -18,14 +18,14 @@ angular.module('app-bootstrap').component('login', {
         this.error = '';
         validateControls(form);
         if (form.$valid) {
-          this.loading = true;
+          this.loading = 'loading';
           userService.signIn(this.user).then((response) => {
             authService.auth(response.headers('Access-token'));
             $state.go('bookList');
           }, (error) => {
             this.error = error.data.errors.join(', ');
           }).finally(() => {
-            this.loading = false;
+            this.loading = '';
           });
         }
       };
