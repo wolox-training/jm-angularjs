@@ -4,14 +4,7 @@
     <div class="icon"></div>
   </div>
   <div class="book-list">
-    <div ng-repeat="book in $ctrl.filteredBooks" class="book">
-      <a ui-sref="book({ id: book.id })">
-        <img class="cover" ng-src="{{ book.image_url || '../../assets/book-cover.png' }}" alt="{{ 'BOOKLIST.COVER' | translate }}">
-        <div class="book-info">
-          <h6 class="title-6">{{ book.title }}</h6>
-          <span class="sub-head-3">{{ book.author }}</span>
-        </div>
-      </a>
-    </div>
+    <wc-card 
+      ng-repeat="book in $ctrl.filteredBooks" ui-sref="book({ id: book.id })" title="{{ book.title }}" author="{{ book.author }}" cover="{{ book.image_url || '../../assets/LogoWolox.png' }}" alt="{{ 'BOOKLIST.COVER' | translate }}"></wc-card>
   </div>
 </div>

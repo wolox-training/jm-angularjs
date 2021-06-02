@@ -37,29 +37,8 @@
   max-width: $container-width;
   width: 100%;
 
-  .book {
-    @include shadow(4px 4px 15px 2px $black-shadow);
+  wc-card {
     align-self: flex-start;
-    margin: 20px;
-    max-width: 182px;
-    padding: 20px;
-    transition: transform .5s;
-    width: 100%;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-
-    .cover {
-      height: 200px;
-      width: 142px;
-    }
-
-    .book-info {
-      display: flex;
-      flex-direction: column;
-      margin-top: 10px;
-    }
   }
 }
 
